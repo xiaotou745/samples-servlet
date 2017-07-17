@@ -4,10 +4,12 @@
 
 <web-app>
     <display-name>Archetype Created Web Application</display-name>
+
     <servlet>
         <servlet-name>helloWorldServlet</servlet-name>
         <servlet-class>samples.servlet.HelloWorldServlet</servlet-class>
     </servlet>
+
     <servlet-mapping>
         <servlet-name>helloWorldServlet</servlet-name>
         <url-pattern>/helloworld</url-pattern>
