@@ -1,0 +1,50 @@
+<!DOCTYPE web-app PUBLIC
+        "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+        "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+    <display-name>Archetype Created Web Application</display-name>
+
+    <filter>
+        <filter-name>myFilter1</filter-name>
+        <filter-class>samples.servlet.filter.MyFilter1</filter-class>
+    </filter>
+
+    <filter-mapping>
+        <filter-name>myFilter1</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+
+    <filter>
+        <filter-name>myFilter2</filter-name>
+        <filter-class>samples.servlet.filter.MyFilter2</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>myFilter2</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+
+    <filter>
+        <filter-name>authenticationFilter</filter-name>
+        <filter-class>samples.servlet.filter.AuthenticationFilter</filter-class>
+        <init-param>
+            <param-name>disableFilter</param-name>
+            <param-value>N</param-value>
+        </init-param>
+
+        <init-param>
+            <param-name>loginUrl</param-name>
+            <param-value>/login</param-value>
+        </init-param>
+
+        <init-param>
+            <param-name>islogon</param-name>
+            <param-value>false</param-value>
+        </init-param>
+    </filter>
+    <filter-mapping>
+        <filter-name>authenticationFilter</filter-name>
+        <url-pattern>/helloworld</url-pattern>
+    </filter-mapping>
+
+</web-app>

@@ -2,7 +2,7 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <artifactId>samples.servlet.step1</artifactId>
+    <artifactId>step3</artifactId>
     <packaging>war</packaging>
 
     <parent>
@@ -29,6 +29,6 @@
     </dependencies>
 
     <build>
-        <finalName>samples.servlet.step1</finalName>
+        <finalName>step3</finalName>
     </build>
 </project>

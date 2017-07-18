@@ -8,6 +8,7 @@
     <servlet>
         <servlet-name>helloWorldServlet</servlet-name>
         <servlet-class>samples.servlet.HelloWorldServlet</servlet-class>
+        <!--<load-on-startup>1</load-on-startup>-->
     </servlet>
 
     <servlet-mapping>
